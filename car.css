@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.sky {
+  background-image: url("car files/background.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+.trees {
+  background-image: url("car files/trees.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  bottom: 31vh;
+}
+.track {
+  background-image: url("car files/track.png");
+  height:30vh;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  bottom: 1vh;
+}
+.car {
+    background-image: url("car files/car_body.png");
+    height:5vw;
+    width: 16vw;
+    background-size: cover;
+    position: absolute;
+    top: 80vh;
+    left: 5vw;
+}
