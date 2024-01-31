@@ -27,10 +27,23 @@
 }
 .car {
   background-image: url("car files/car_body.png");
-  height: 5vw;
-  width: 16vw;
+  height: 100px;
+  width: 380px;
   background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
-  top: 80vh;
-  left: 5vw;
+  left: 84px;
+  bottom: 210px;
+}
+.wheel1 img {
+  width: 77px;
+  position: relative; 
+  top: 38px;
+  left: 42px;
+}
+.wheel2 img {
+  width: 77px;
+  position: relative;
+  top: -39px;
+  left: 235px;
 }
