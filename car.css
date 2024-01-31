@@ -19,11 +19,13 @@
 }
 .track {
   background-image: url("car files/track.png");
-  height: 30vh;
-  width: 100%;
+  height:30vh;
+  width: 900vw;
   background-size: cover;
   position: absolute;
   bottom: 1vh;
+  left: 0vw;
+  animation: carMove linear .40s infinite;
 }
 .car {
   background-image: url("car files/car_body.png");
@@ -37,13 +39,26 @@
 }
 .wheel1 img {
   width: 77px;
-  position: relative; 
+  position: relative;
   top: 38px;
   left: 42px;
+  animation: wheelrotate linear 0.8s infinite;
 }
 .wheel2 img {
   width: 77px;
   position: relative;
   top: -39px;
   left: 235px;
+  animation: wheelrotate linear 0.8s infinite;
+}
+
+@keyframes wheelrotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes carMove {
+  100% {
+    transform: translateX(-500vw);
+  }
 }
