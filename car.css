@@ -38,17 +38,17 @@
   bottom: 210px;
 }
 .wheel1 img {
-  width: 77px;
+  width: 69px;
   position: relative;
-  top: 38px;
-  left: 42px;
+  top: 43px;
+  left: 48px;
   animation: wheelrotate linear 0.8s infinite;
 }
 .wheel2 img {
-  width: 77px;
+  width: 68px;
   position: relative;
-  top: -39px;
-  left: 235px;
+  top: -30px;
+  left: 239px;
   animation: wheelrotate linear 0.8s infinite;
 }
 
