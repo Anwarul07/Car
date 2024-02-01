@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
 }
-body{
+body {
   overflow: hidden;
+  animation: trackshake linear 3s infinite;
 }
 .sky {
   background-image: url("car files/background.jpg");
@@ -22,14 +23,14 @@ body{
 }
 .track {
   background-image: url("car files/track.png");
-  height:30vh;
+  height: 30vh;
   width: 900vw;
   background-repeat: repeat-x;
   background-size: cover;
   position: absolute;
   bottom: 1vh;
   left: 0vw;
-  animation: carMove linear .40s infinite;
+  animation: carMove linear 0.4s infinite;
 }
 .car {
   background-image: url("car files/car_body.png");
@@ -40,6 +41,7 @@ body{
   position: absolute;
   left: 84px;
   bottom: 210px;
+  animation: carshake linear 0.3s infinite;
 }
 .wheel1 img {
   width: 69px;
@@ -64,5 +66,28 @@ body{
 @keyframes carMove {
   100% {
     transform: translateX(-500vw);
+  }
+}
+@keyframes trackshake {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes carshake {
+  0% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
   }
 }
